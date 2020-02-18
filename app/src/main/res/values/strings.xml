@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Dictionary - Daily Words</string>
+    <string name="app_name">Daily Words</string>
     <string name="daily_words">Daily Words</string>
     <string name="search_for_word">Search for word</string>
     <string name="quote_of_the_day">Quote of the day</string>
