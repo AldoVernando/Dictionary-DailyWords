@@ -25,26 +25,47 @@
         android:layout_below="@+id/daily_words"
         tools:ignore="ContentDescription" />
 
-    <EditText
-        android:id="@+id/search_text"
+    <LinearLayout
+        android:id="@+id/search_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textAutoComplete"
-        android:hint="@string/search_for_word"
-        android:importantForAutofill="no"
-        android:textSize="20sp"
+        android:orientation="horizontal"
         android:layout_below="@+id/borderline"
-        android:drawableEnd="@drawable/search"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"/>
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoComplete"
+            android:hint="@string/search_for_word"
+            android:importantForAutofill="no"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.2"/>
+
+        <ImageView
+            android:id="@+id/search_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/search"
+            android:layout_weight="0.8"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
 
     <ScrollView
         android:id="@+id/scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/search_text"
+        android:layout_below="@+id/search_bar"
         android:layout_above="@+id/borderline2">
 
         <LinearLayout

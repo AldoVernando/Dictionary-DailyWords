@@ -27,7 +27,7 @@ class WordViewModel : ViewModel() {
         getData(word_data)
     }
 
-    private fun getData(word : String){
+    fun getData(word : String){
 
         val retrofit = Retrofit.Builder()
             .baseUrl(BASE_URL)

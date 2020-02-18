@@ -1,12 +1,15 @@
 package com.example.dictionary_dailywords.views
 
 import android.annotation.SuppressLint
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.MotionEvent
+import android.view.View.OnTouchListener
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.example.dictionary_dailywords.R
-import com.example.dictionary_dailywords.models.quote.Quote
 import com.example.dictionary_dailywords.models.dictionary.ResultResponse
+import com.example.dictionary_dailywords.models.quote.Quote
 import com.example.dictionary_dailywords.viewmodels.QuoteViewModel
 import com.example.dictionary_dailywords.viewmodels.WordViewModel
 import kotlinx.android.synthetic.main.activity_main.*
@@ -40,5 +43,10 @@ class MainActivity : AppCompatActivity() {
 
         word_text.text = wordViewModel.word_data
 
+        search_btn.setOnClickListener {
+            val query = search_text.text.toString()
+            word_text.text = query
+            wordViewModel.getData(query)
+        }
     }
 }
