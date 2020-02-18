@@ -1,6 +1,6 @@
-package com.example.dictionary_dailywords.services
+package com.DO.dictionary_dailywords.services
 
-import com.example.dictionary_dailywords.models.dictionary.ResultResponse
+import com.DO.dictionary_dailywords.models.dictionary.ResultResponse
 import retrofit2.http.GET
 import retrofit2.Call
 import retrofit2.http.Headers

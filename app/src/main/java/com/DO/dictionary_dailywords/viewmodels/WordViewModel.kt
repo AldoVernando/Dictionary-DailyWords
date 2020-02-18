@@ -1,10 +1,10 @@
-package com.example.dictionary_dailywords.viewmodels
+package com.DO.dictionary_dailywords.viewmodels
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.dictionary_dailywords.models.dictionary.ResultResponse
-import com.example.dictionary_dailywords.services.DictionaryService
+import com.DO.dictionary_dailywords.models.dictionary.ResultResponse
+import com.DO.dictionary_dailywords.services.DictionaryService
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

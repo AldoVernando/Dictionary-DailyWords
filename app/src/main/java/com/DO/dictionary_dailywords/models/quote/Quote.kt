@@ -1,4 +1,4 @@
-package com.example.dictionary_dailywords.models.quote
+package com.DO.dictionary_dailywords.models.quote
 
 import com.google.gson.annotations.SerializedName
 

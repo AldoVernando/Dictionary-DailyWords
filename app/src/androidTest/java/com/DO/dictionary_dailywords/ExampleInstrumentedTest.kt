@@ -1,4 +1,4 @@
-package com.example.dictionary_dailywords
+package com.DO.dictionary_dailywords
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

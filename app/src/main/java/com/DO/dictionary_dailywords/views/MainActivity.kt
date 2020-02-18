@@ -1,4 +1,4 @@
-package com.example.dictionary_dailywords.views
+package com.DO.dictionary_dailywords.views
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -10,10 +10,10 @@ import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.example.dictionary_dailywords.R
-import com.example.dictionary_dailywords.models.dictionary.ResultResponse
-import com.example.dictionary_dailywords.models.quote.Quote
-import com.example.dictionary_dailywords.viewmodels.QuoteViewModel
-import com.example.dictionary_dailywords.viewmodels.WordViewModel
+import com.DO.dictionary_dailywords.models.dictionary.ResultResponse
+import com.DO.dictionary_dailywords.models.quote.Quote
+import com.DO.dictionary_dailywords.viewmodels.QuoteViewModel
+import com.DO.dictionary_dailywords.viewmodels.WordViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
