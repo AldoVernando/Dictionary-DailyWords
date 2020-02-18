@@ -1,10 +1,12 @@
 package com.example.dictionary_dailywords.views
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.MotionEvent
 import android.view.View.OnTouchListener
+import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.example.dictionary_dailywords.R
@@ -45,8 +47,14 @@ class MainActivity : AppCompatActivity() {
 
         search_btn.setOnClickListener {
             val query = search_text.text.toString()
-            word_text.text = query
-            wordViewModel.getData(query)
+            val keyboard = this.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            keyboard.hideSoftInputFromWindow(it.windowToken, 0)
+
+            if(!query.isEmpty()) {
+                word_definition.text = ""
+                word_text.text = query
+                wordViewModel.getData(query)
+            }
         }
     }
 }
